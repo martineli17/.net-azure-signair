@@ -10,8 +10,8 @@ Esse cenário se torna um obstáculo pois as aplicações atuais (principalmente
 Tendo isso em mente, pode ocorrer o seguinte cenário:
 1. Usuário inicia a conexão websocket e o Pod 01 recebe esse requisição.
 2. A aplicação aumenta a sua capacidade de processamento para 02 pods.
-3. Ocorre um determinado fluxo de trabalho que dispara um processamento no Pod 02 para notificar o usuário através de conexão Websocket.
-4. O usuário não receberá essa notificação pois a conexão dele foi recebida pelo Pod 01.
+3. Ocorre um determinado fluxo de trabalho que dispara um processamento no Pod 02 para notificar o usuário através websocket.
+4. O usuário não receberá essa notificação pois a conexão dele está sendo gerenciada pelo Pod 01.
 
 Então, isso se torna um problema pois, mesmo havendo o processamento correto do fluxo, o usuário não receberá o retorno do evento.
 
