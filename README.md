@@ -16,7 +16,7 @@ Tendo isso em mente, pode ocorrer o seguinte cenário:
 Isso se torna um problema pois mesmo havendo o processamento correto do fluxo, o usuário não receberá o retorno do evento esperado.
 
 ## Soluções
-Para contornar este problema, existe algumas soluções que tem o objetivo de gerenciar e armazenar as conexões e mensagens, sendo possível compartilhar estas informações entre os hosts disponível para o processamento.
+Para contornar este problema, existe algumas soluções que tem o objetivo de gerenciar e armazenar as conexões e mensagens, sendo possível compartilhar estas informações entre os hosts disponíveis para o processamento.
 Dentre as soluções, há disponível:
 - Azure SignaIr (utilizado neste exemplo)
 - Redis para itilização de uma camada de cache
