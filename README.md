@@ -3,6 +3,7 @@
 O Azure SignaIr é um serviço disponiblizado pela Azure para gerenciar as conexões e mensagens websockets das aplicações.
 
 Além disso, permite criar soluções [Serveless - Functions](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-serverless-development-config?tabs=isolated-process) para comunicação websocket, assim os eventos podem ter um listener para serem disparados somente quando necessário.
+Para criar soluções Serveless, no momento de criar o serviço na Azure precisa selecionar a opção de `Serveless`.
 
 Isso é possível pois, como dito anteriormente, o gerencimento das conexões fica como responsabilidade do serviço da Azure, estando acessível em qualquer host que tenha acesso ao serviço.
 
