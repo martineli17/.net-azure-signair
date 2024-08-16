@@ -13,7 +13,7 @@ Tendo isso em mente, pode ocorrer o seguinte cenário:
 3. Ocorre um determinado fluxo de trabalho que dispara um processamento no Pod 02 para notificar o usuário através websocket.
 4. O usuário não receberá essa notificação pois a conexão dele está sendo gerenciada pelo Pod 01.
 
-Então, isso se torna um problema pois, mesmo havendo o processamento correto do fluxo, o usuário não receberá o retorno do evento.
+Isso se torna um problema pois mesmo havendo o processamento correto do fluxo, o usuário não receberá o retorno do evento esperado.
 
 ## Soluções
 Para contornar este problema, existe algumas soluções que tem o objetivo de gerenciar e armazenar as conexões e mensagens, sendo possível compartilhar estas informações entre os hosts disponível para o processamento.
