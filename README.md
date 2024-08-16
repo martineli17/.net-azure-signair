@@ -24,7 +24,7 @@ Isso se torna um problema pois mesmo havendo o processamento correto do fluxo, o
 Para contornar este problema, existe algumas soluções que tem o objetivo de gerenciar e armazenar as conexões e mensagens, sendo possível compartilhar estas informações entre os hosts disponíveis para o processamento.
 Dentre as soluções, há disponível:
 - Azure SignaIr (utilizado neste exemplo)
-- Redis para itilização de uma camada de cache
+- Redis para utilização de uma camada de cache
 
 ## Exemplo
 
