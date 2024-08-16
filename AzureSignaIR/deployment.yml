@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-azure-signair-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: api-azure-signair-deployment
+  template:
+    metadata:
+      labels:
+        app: api-azure-signair-deployment
+    spec:
+      containers:
+      - name: api-azure-signair
+        image: IMAGE_NAME_HERE
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ConnectionStrings__AzureSignaIR
+          value: AZURE_SIGNAIR_CONNECTION_STRING
+        - name: AzureSignaIRIsEnabled
+          value: 'true' # CRIAR O DEPLOYMENT HABILITANDO OU NAO O AZURE SIGNAIR NOS PODS
