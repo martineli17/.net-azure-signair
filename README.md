@@ -4,7 +4,7 @@ O Azure SignaIr é um serviço disponiblizado pela Azure para gerenciar as conex
 
 ## Contexto de uso
 
-Uma aplicação utiliza o SignaIr (websocket) tem o gerenciamento das conexões e das mensagens armazenadas dentro do host que está executando aquele processo.
+Uma aplicação que utiliza o SignaIr (websocket) tem o gerenciamento das conexões e das mensagens armazenadas dentro do host que está executando aquele processo.
 Com isso, quando o usuário inicia o processo de comunicação websocket, a sua conexão fica restrita ao host que recebeu essa solicitação e, consequentemente, todo o processamento que necessita enviar eventos para este usuário precisa ser executado por este host específico.
 Esse cenário se torna um obstáculo pois as aplicações atuais (principalmente utilizando Kubernetes) tem a capacidade e necessidade de realizar a escalabilidade visando aumentar ou diminuir a capacidade de processamento de acordo com a demanda atual de trabalho. 
 Tendo isso em mente, pode ocorrer o seguinte cenário:
