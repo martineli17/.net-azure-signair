@@ -22,7 +22,7 @@ Dentre as soluções, há disponível:
 - Redis para itilização de uma camada de cache
 
 ## Exemplo
-Neste exemplo, foi criada uma aplicação frontend que iniciará a conexão websocket. Para isso, é precisa indicar qual é o host que deseja utilizar para esta comunicação e, posteriormente, enviar mensagens para testes.
+Neste exemplo, foi criada uma aplicação frontend que iniciará a conexão websocket. Para isso, é preciso indicar qual é o host que deseja utilizar para esta comunicação e, posteriormente, enviar mensagens para testes.
 Além disso, há uma aplicação backend na qual receberá as solicitações websockets (utilizando o pacote SignaIr do .NET) e processará as mensagens. 
 Na aplicação backend, há um parâmetro de configuração para definir se irá utilizar o Azure SignaIr ou se irá manter o gerencimento no próprio host.
 
